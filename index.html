@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Mi hoja de estilos -->
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icons/TC_solosinfondo.png" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/fcd0102f5d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="grid-principal">
+      <div class="box c1">
+        <ul class="barraDeNavegacion">
+          <li id="logo">
+            <img
+              id="logo"
+              src="img/TC_solosinfondo.png"
+              alt="logo de la p&aacute;gina"
+              width="50em"
+            />
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/tasistroc/"
+              class="fa-brands fa-instagram"
+            ></a
+            ><br />Instagram
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/tasistro"
+              class="fa-brands fa-facebook"
+              title="Facebook"
+            ></a
+            ><br />Facebook
+          </li>
+          <li>
+            <a
+              href="https://wa.me/5493444623927"
+              class="fa-brands fa-whatsapp"
+              title="Contacto"
+            ></a
+            ><br />Whatsapp
+          </li>
+        </ul>
+      </div>
+
+      <div class="box c5">
+        <img id="fotoPerf" src="img/FotoDePerfil.jpg" alt="Foto personal" />
+        <br /><br /><br />
+        <h2>Freelancer</h2>
+        <p>¡Hola, mi nombre es Cristhian Tasistro!</p>
+        <p>Soy Web Developer Junior: <b>HTML5 ~ CSS + Bootstrap ~ JS</b></p>
+        <br /><br /><br /><br /><br /><br /><br />
+        <p id="mensaje">
+          <i>"Si tu puedes imaginarlo, yo podr&eacute; crearlo."</i>
+        </p>
+      </div>
+
+      <div class="box c6">
+        <span
+          ><a class="fa-solid fa-location-dot" title="Ubicación"></a>
+          <br />
+          <b>Ubicaci&oacute;n</b></span
+        >
+        <br />
+        <br />
+        <iframe
+          id="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.3689439308982!2d-59.31792158524682!3d-33.151939689639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b09c994f3f6361%3A0x6074e45079fb939f!2sSalta%20315%2C%20E2840%20Gualeguay%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1676409100600!5m2!1ses-419!2sar"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="box c7">
+        <h2 id="mensaje1">¿Tienes un proyecto en mente?</h2>
+        <form action="action_page.php">
+          <label for="fname">Nombre</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="T&uacute; nombre"
+          />
+
+          <label for="lname">Apellido</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="T&uacute; apellido"
+          />
+
+          <label for="subject">Informaci&oacute;n</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Cu&eacute;ntame un poco.."
+            style="height: 100px"
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+
+      <div class="box c8">
+        <span id="piedepagina"
+          >Si usted quiere, puede descargar y visualizar mi Curriculum Vitae:<a
+            class="fa-solid fa-download"
+            href="files/CV.docx"
+            download="CV Tasistro Cristhian"
+            title="Descargar CV"
+          ></a
+        ></span>
+      </div>
+    </div>
+  </body>
+</html>

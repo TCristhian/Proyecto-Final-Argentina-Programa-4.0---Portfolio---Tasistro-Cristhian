@@ -1,0 +1,229 @@
+body {
+  background: linear-gradient(to right, rgb(243, 223, 223), rgb(245, 226, 237));
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.grid-principal {
+  height: 1200px;
+  display: grid;
+  grid-template-areas:
+    "menu menu menu menu menu"
+    "presentacion presentacion presentacion presentacion barralateral" /*falta barralateral*/
+    "acercade acercade acercade acercade acercade" /*falta barralateral*/
+    "piedepagina piedepagina piedepagina piedepagina piedepagina";
+  grid-template-rows: 10% 45% 40% 5%;
+}
+
+.box {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 10px;
+}
+
+.c1 {
+  grid-area: menu;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.barraDeNavegacion li {
+  display: inline-block;
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+}
+
+#logo {
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+}
+
+#logo:hover {
+  cursor: pointer;
+  transition: all 400ms ease-out;
+  transform: scale(1.3);
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*Logo
+.c1 {
+  text-align: left;
+  grid-area: logo;
+}
+
+#logo:hover {
+  cursor: pointer;
+  transition: all 400ms ease-out;
+  transform: scale(1.25);
+}
+
+/*Inicio
+.c2 {
+  font-weight: bold;
+  grid-area: inicio;
+}
+
+/*Información
+.c3 {
+  font-weight: bold;
+  grid-area: informacion;
+}
+
+/*Contacto
+.c4 {
+  font-weight: bold;
+  grid-area: contacto;
+}
+
+#imagen-oculta {
+  position: relative;
+  top: 1086%;
+  right: 170%;
+  font-size: 15px;
+} */
+
+/*Presentación*/
+.c5 {
+  grid-area: presentacion;
+  width: 550px;
+  transition-property: width;
+  transition-duration: 3s;
+  transition-delay: 0s;
+  border-radius: 15px;
+  background: linear-gradient(to right, rgb(224, 125, 231), rgb(245, 169, 212));
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+.c5:hover {
+  width: 960px;
+}
+
+#fotoPerf {
+  margin: 2%;
+  float: right;
+  border-radius: 15px;
+  height: 94%;
+}
+
+h2 {
+  color: antiquewhite;
+  font-size: 2em;
+  text-shadow: 5px 5px 10px black;
+}
+
+#mensaje {
+  color: antiquewhite;
+  font-size: 2em;
+  text-shadow: 2px 2px 5px black;
+}
+
+/*Barra lateral*/
+.c6 {
+  grid-area: barralateral;
+  margin-top: 25%;
+  border-radius: 15px;
+  color: black;
+}
+
+.fa-location-dot:hover {
+  color: darkred;
+  transition: all 400ms ease-out;
+  transform: scale(1.35);
+}
+
+#googleMap {
+  height: 50%;
+  border-radius: 15px;
+}
+
+/*Acerca de*/
+.c7 {
+  grid-area: acercade;
+  border-radius: 3px;
+  background: linear-gradient(to right, rgb(224, 125, 231), rgb(245, 169, 212));
+  color: antiquewhite;
+}
+
+#mensaje1 {
+  font-size: 2em;
+  text-shadow: 5px 5px 10px black;
+}
+
+/*Pie de página*/
+.c8 {
+  height: 2.2em;
+  border-radius: 5px;
+  grid-area: piedepagina;
+  background: linear-gradient(to right, rgb(224, 125, 231), rgb(245, 169, 212));
+}
+
+/*Hacer un modo nocturno*/
+
+a {
+  text-decoration: none;
+  color: rgb(238, 132, 233);
+  font-size: 2em;
+}
+
+a:hover {
+  color: darkred;
+}
+
+label {
+  font-size: 1em;
+  text-shadow: 5px 5px 10px black;
+}
+
+/* Formulario directo de W3S */
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: 0.5px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.fa-download {
+  text-shadow: 5px 5px 10px darkgray;
+  color: darkred;
+  border-radius: 50px;
+  transition: all 750ms ease-out;
+}
+
+.fa-download:hover {
+  transform: scale(1.1);
+}
+
+#piedepagina{
+  justify-content: space-between;
+  color: white;
+  font-size: 1em;
+  text-shadow: 5px 5px 10px black;
+}
